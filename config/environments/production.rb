@@ -64,6 +64,11 @@ Rails.application.configure do
     namespace: 'whatsapp:cache'
   }
 
+  config.redis = {
+    url: "redis://red-cijb99t9aq01qqieuss0:6379"
+  }
+
+
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "whatapp_production"
